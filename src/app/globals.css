@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-main;
+}
+.bg-image {
+  background-image: url(../../public/ai.webp);
+  background-size: cover;
+}
+
+.custom-scroll {
+  scrollbar-color: red;
+}
+.custom-scroll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 10px;
+}
+.scrollable-container {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* Adds some padding for better aesthetics */
+  margin-bottom: 8px; /* Adds space below the scrollable container */
+}
